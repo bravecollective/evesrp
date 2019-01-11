@@ -111,7 +111,7 @@ class BraveNeuCore(OAuthMethod):
         data = self._get_user_data()
         return super(BraveNeuCore, self).is_admin(user) or \
                 user.auth_id in self.admins or \
-                u'srp.admin' in [g.name for g in data[u'groups']]
+                u'srp.admin' in [g[u'name'] for g in data[u'groups']]
 
     def get_pilots(self):
         pilots = []

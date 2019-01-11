@@ -41,9 +41,12 @@ SRP_AUTH_METHODS = [
 # You can specify custom killmail handling classes here. The instance folder is
 # added to the import search path, so the modules can be placed in there.
 SRP_KILLMAIL_SOURCES = [
+    'evesrp.killmail.ZKillmail',
 ]
 
 SRP_SHIP_TYPE_URL_TRANSFORMERS = [
+    (u'BRAVE Wiki Fits',
+        'https://wiki.bravecollective.com/member/alliance/military/doctrines/ships/{}'),
 ]
 
 SRP_PILOT_URL_TRANSFORMERS = [
