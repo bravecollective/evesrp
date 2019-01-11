@@ -73,12 +73,12 @@ messages.pot: generated_messages.pot manual_messages.pot
 generated_messages.pot: babel.cfg $(addprefix $(SRC_DIR)/, *.py */*.py templates/*.html)
 	pybabel extract \
 		-F babel.cfg \
-		--output-file=$@ \
+		--output=$@ \
 		--add-comments="TRANS:" \
 		--project=EVE-SRP \
 		--version=$(VERSION) \
-		--keywords=lazy_gettext \
-		--strip-comments \
+		--keyword=lazy_gettext \
+		--strip-comment-tags \
 		--msgid-bugs-address=paxswill@paxswill.com \
 		--copyright-holder="Will Ross" \
 		.
