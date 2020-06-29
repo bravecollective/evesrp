@@ -78,7 +78,6 @@ UGLIFY ?= $(NODE_BIN)/uglifyjs
 ifndef DEBUG
 UGLIFY_OPTS ?= -m -c
 endif
-UGLIFY_OPTS += --source-map-include-sources
 
 javascript:: $(JS_DIR)/evesrp.min.js $(JS_DIR)/formatters.min.js
 
@@ -87,17 +86,11 @@ clean::
 
 # Include the source map for evesrp.js
 $(JS_DIR)/evesrp.min.js: $(JS_DIR)/evesrp.js.map
-$(JS_DIR)/evesrp.min.js: UGLIFY_OPTS += \
-	--in-source-map $(JS_DIR)/evesrp.js.map
-	# --prefix relative
 
 $(JS_DIR)/%.min.js: $(JS_DIR)/%.js
 	$(UGLIFY) \
 		$< \
 		$(UGLIFY_OPTS) \
-		--prefix relative \
-		--source-map $@.map \
-		--source-map-url $(notdir $@.map) \
 		--output $@
 
 

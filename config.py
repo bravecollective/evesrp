@@ -25,7 +25,7 @@ SRP_AUTH_METHODS = [
         # special case of some AuthMethods, integers are also acceptable values
         # for the list.). This is very useful when first setting up the app, as
         # only site-wide administrators can create divisions.
-        'admins': [u'Yukiko Kami', u'Rangvaldr'],
+        'admins': [u'Yukiko Kami', u'Tian Khamez', u'Rangvaldr'],
         # The OAuth consumer key and secret.
         # You can set a different name for an auth method here. This name is
         # shown to users, and should not be changed (and cannot without a lot
