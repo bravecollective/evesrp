@@ -1,3 +1,9 @@
+## Project Status
+I've been winning at Eve for a few years now (translation for non-players:
+"winning Eve" means not playing), and haven't been working on this in that time
+either. If anyone would like to continue development themselves, I'd be more than
+happy to transfer this repo into an organization and point people there.
+
 [![Build Status](https://travis-ci.org/paxswill/evesrp.svg?branch=master)](https://travis-ci.org/paxswill/evesrp)
 [![Documentation Status](https://readthedocs.org/projects/eve-srp/badge/?version=master)](https://readthedocs.org/projects/eve-srp/?badge=master)
 [![Coverage Status](https://coveralls.io/repos/paxswill/evesrp/badge.svg?branch=master&service=github)](https://coveralls.io/github/paxswill/evesrp?branch=master)
@@ -8,7 +14,19 @@ it's closer to a real release. IN the mean time, here're some
 
 [screens]: http://imgur.com/a/3IEQC
 
+## Acknowledgements
 
+In addition to the libraries this project uses, I need to thank the Eve
+alliances Test Alliance Please Ignore and Brave. This app was originally
+written as a replacement for Test's old SRP app, but Brave ended up needing
+one before we were ready to deploy it for Test. Brave's early IT team and
+alliance members were great "beta" testers, making suggestions that improved
+the app in a myriad of ways.
+
+A very large thank you to [Galaxy Android][galaxy-android] as well for alerting
+me to a security vulnerability that was fixed in v0.12.12.
+
+[galaxy-android]: https://evewho.com/character/92317068
 ## Developing
 
 ### Dependencies
